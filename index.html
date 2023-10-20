@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Piano de Portafolio</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #EEEAEA;  
+        }
+
+        .piano {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .key {
+            width: 50px;
+            height: 300px;
+            background: rgb(255,255,255);
+            border: 1px solid #000;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .key.black {
+            background: black;
+            width: 40px;
+            height: 130px;
+            margin: 0 -20px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portafolio</h1>
+    <div class="piano">
+        <div class="key" onclick="redirigirCarpeta('tarea1')">Do</div>
+        <div class="key black" onclick="redirigirCarpeta('tarea2')">Do#</div>
+        <div class="key" onclick="redirigirCarpeta('tarea3')">Re</div>
+        <div class="key black" onclick="redirigirCarpeta('tarea4')">Re#</div>
+        <div class="key" onclick="redirigirCarpeta('tarea5')">Mi</div>
+        <div class="key" onclick="redirigirCarpeta('tarea6')">Fa</div>
+        <div class="key black" onclick="redirigirCarpeta('carpeta7')">Fa#</div>
+        <div class="key" onclick="redirigirCarpeta('carpeta8')">Sol</div>
+        <div class="key black" onclick="redirigirCarpeta('carpeta9')">Sol#</div>
+        <div class="key" onclick="redirigirCarpeta('carpeta10')">La</div>
+        <div class="key black" onclick="redirigirCarpeta('carpeta11')">La#</div>
+        <div class="key" onclick="redirigirCarpeta('carpeta12')">Si</div>
+    </div>
+
+    <p> <span id="tareaSeleccionada">Ninguna</span></p>
+
+    <div class="button-container">
+        <a href="perfil.html" class="button">Perfil</a>
+        <a href="contacto.html" class="button">Contacto</a>
+    </div>
+
+    <p><input type="text" value="Imagen escrita trata de darnos otra perspectiva de lo interno"></p>
+
+    <script>
+        function seleccionarTarea(tarea) {
+            document.getElementById('tareaSeleccionada').textContent = tarea;
+        }
+
+        function redirigirCarpeta(carpeta) {
+            window.location.href = carpeta + '/index.html';
+        }
+    </script>
+</body>
+</html>
