@@ -15,23 +15,24 @@
         }
 
         .key {
-            width: 50px;
-            height: 300px;
+            width: 83px;
+            height: 430px;
             background: rgb(255,255,255);
             border: 1px solid #000;
-            margin: 0 5px;
+            margin: 49px 4px;
             cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0,1);
         }
 
         .key.black {
             background: black;
-            width: 40px;
-            height: 130px;
-            margin: 0 -20px;
+            width: 30px;
+            height: 265px;
+            margin: -165px -13px 0 -20px;
         }
 
         .button-container {
-            margin-top: 20px;
+            margin-top: 82px;
         }
 
         .button {
@@ -45,9 +46,9 @@
     </style>
 </head>
 <body>
-    <h1>Portafolio</h1>
+    <h1>Teclado de repertorio</h1>
     <div class="piano">
-        <div class="key" onclick="redirigirCarpeta()"></div>
+        <div class="key" onclick="loadSound(piano.mp3.wav)"></div>
         <div class="key black" onclick="redirigirCarpeta('tarea1')">1</div>
         <div class="key" onclick="redirigirCarpeta()"></div>
         <div class="key black" onclick="redirigirCarpeta('tarea2')">2</div>
