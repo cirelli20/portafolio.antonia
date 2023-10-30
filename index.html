@@ -43,6 +43,13 @@
             text-decoration: none;
             margin: 10px;
         }
+        /* Estilos para el pie de página */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +68,7 @@
         <div class="key black" onclick="redirigirCarpeta('tarea5')">5</div>
         <div class="key" onclick="redirigirCarpeta()"></div>
     </div>
+  
 
     <p> <span id="tareaSeleccionada"></span></p>
 
@@ -68,8 +76,9 @@
         <a href="perfil.html" class="button">Perfil</a>
         <a href="https://wiki.ead.pucv.cl/Antonia_Cirelli_Gonzalez_Tapia" class="button">Wiki Casiopea</a>
     </div>
+  <footer>
+        &copy;portafolio para imagen escrita 2023 ramo de programacion de E[ad] 
 
-    <p><input type="text" value="Imagen escrita trata de darnos otra perspectiva de lo interno"></p>
 
     <script>
         function seleccionarTarea(tarea) {
