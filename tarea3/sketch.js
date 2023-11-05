@@ -14,7 +14,7 @@ function setup() {
   noStroke();
   // Crea un elemento de entrada de tipo rango (barra deslizante)
   slider = createSlider (0, 1.5, 1.0, 0.01);
-  slider.position(10, height + 10);
+  slider.position(1, height + 20);
   slider.style('width', '180px');
 }
 
@@ -26,6 +26,7 @@ function draw() {
   drawFlower(flowerCenter1, petalScale, 5);
   drawFlower(flowerCenter2, petalScale, 5); // Segunda flor con pétalos más grandes
   drawFlower(flowerCenter3, petalScale, 5); // Tercera flor con pétalos más pequeños
+  
 }
 
 function drawFlower(center, scale, numPetals) {
