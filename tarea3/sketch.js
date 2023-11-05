@@ -14,7 +14,7 @@ function setup() {
   noStroke();
   // Crea un elemento de entrada de tipo rango (barra deslizante)
   slider = createSlider (0, 1.5, 1.0, 0.01);
-  slider.position(1, height + 20);
+  slider.position(10, 10);
   slider.style('width', '180px');
 }
 
