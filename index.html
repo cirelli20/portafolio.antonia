@@ -55,18 +55,18 @@
 <body>
     <h1>Teclado de repertorio</h1>
     <div class="piano">
-        <div class="key" onclick="loadSound(piano.mp3.wav)"></div>
+        <div class="key" onclick="playSound('piano.mp3.wav')"></div>
         <div class="key black" onclick="redirigirCarpeta('tarea1')">1</div>
-        <div class="key" onclick="redirigirCarpeta()"></div>
+        <div class="key" onclick="playSound('piano.re.mp3')"></div>
         <div class="key black" onclick="redirigirCarpeta('tarea2')">2</div>
-        <div class="key" onclick="redirigirCarpeta()"></div>
-        <div class="key" onclick="redirigirCarpeta()"></div>
+        <div class="key" onclick="playSound('piano.mi.mp3')"></div>
+        <div class="key" onclick="playSound('piano.fa.mp3')"></div>
         <div class="key black" onclick="redirigirCarpeta('tarea3')">3</div>
-        <div class="key" onclick="redirigirCarpeta()"></div>
+        <div class="key" onclick="playSound('piano.sol.mp3')"></div>
         <div class="key black" onclick="redirigirCarpeta('tarea4')">4</div>
-        <div class="key" onclick="redirigirCarpeta()"></div>
+        <div class="key" onclick="playSound('piano.la.mp3')"></div>
         <div class="key black" onclick="redirigirCarpeta('tarea5')">5</div>
-        <div class="key" onclick="redirigirCarpeta()"></div>
+        <div class="key" onclick="playSound('piano.si.mp3')"></div>
     </div>
   
 
@@ -87,6 +87,10 @@
 
         function redirigirCarpeta(carpeta) {
             window.location.href = carpeta + '/index.html';
+        }
+        function playSound(soundFile) {
+            const audio = new Audio(soundFile);
+            audio.play();
         }
     </script>
 </body>
