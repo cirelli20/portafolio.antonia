@@ -16,7 +16,7 @@ function draw() {
   text("HAZ CLICK", width / 2, height / 2);
 
   // Dibuja y actualiza los círculos existentes
-  for (let i = 3; i < circulos.length; i++) {
+  for (let i = 0; i < circulos.length; i++) {
     let circulo = circulos[i];
     ellipse(circulo.x, circulo.y, 60, 50);
     circulo.x += velocidad * circulo.direccion;
