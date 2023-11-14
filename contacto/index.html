@@ -1,48 +1,65 @@
-<!doctype html>
-<!--[if lte IE 9]>
-<html lang="en" class="oldie">
-<![endif]-->
-<!--[if gt IE 9]><!-->
-<!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>contacto</title>
-  <link rel="stylesheet" media="all" href="style.css" />
-</head>
-<body>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../main.css">
- 
-</head>
-<body class="contactBody">   
-        <div class="wrapper">
-        <div class="title">
-           
-      
-        </div>
-      
+    <title>Página con Hider</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
 
-        <form class="form">
-          <input type="text" class="name entry " placeholder="Tu nombre"/>
-          
-          <input type="text" class="email entry" placeholder="Email"/>
-          
-          <textarea class="message entry" placeholder="Mensaje"></textarea> 
-          
-          <button class="submit entry" onclick="thanks()">enviar</button>
-        </form>  
-        
-        <div class="shadow"></div>
-      </div>
-      
-    <script src="app.js"></script>
-</body>
-</html>
+        #image-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #hider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Cambia la opacidad del hider según tus preferencias */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff; /* Cambia el color del texto según tus preferencias */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        #hider h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #hider p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img id="image" src="descarga.jpg" alt="Imagen de fondo"> <!-- Cambia la ruta de la imagen -->
+        <div id="hider">
+            <h1>Tarjeta de Contacto</h1>
+            <p>Correo: antonia.gonzalez.t@mail.pucv.cl</p>
+            <p>Número de contacto: +569 54356178</p>
+
+        </div>
+    </div>
 </body>
 </html>
