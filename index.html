@@ -54,7 +54,8 @@
 </head>
 <body>
     <h1>Teclado de repertorio</h1>
-    <div class="piano">
+    <div class="container">
+    </div> <div class="piano">
         <div class="key" onclick="playSound('piano.mp3.wav')"></div>
         <div class="key black" onclick="redirigirCarpeta('tarea1')">1</div>
         <div class="key" onclick="playSound('piano.re.mp3')"></div>
@@ -68,7 +69,11 @@
         <div class="key black" onclick="redirigirCarpeta('tarea5')">5</div>
         <div class="key" onclick="playSound('piano.si.mp3')"></div>
     </div>
-  
+    <div class="text-container">
+        <p>Haz click en las teclas negras para visualizar las tareas</p>
+        <p>Haz click en las teclas blancas para tocar una melodía</p>
+    </div>
+</div>
 
     <p> <span id="tareaSeleccionada"></span></p>
 
